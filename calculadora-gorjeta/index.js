@@ -17,8 +17,7 @@ function update() {
 
     let tipValue = bill * (tipPercent / 100)
     let billTotal = bill + tipValue
-    let billEach = billTotal / split
-
+    
     document.getElementById('tipPercent').innerHTML = tipPercent + ' %'
     document.getElementById('tipValue').innerHTML = formatMoney(tipValue)
     document.getElementById('totalWithTip').innerHTML = formatMoney(billTotal)
